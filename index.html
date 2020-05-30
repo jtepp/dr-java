@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 
-<html onclick="clr(1)">
-	<head>
-		<meta charset=“UTF-8”>
-        <meta name=“Description” content=“Got something on your mind? Talk it out with Dr. Java.”>
-        <meta  name="viewport" content="width=device-width, initial-scale=1">
-        <title>Dr Java</title>
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-    </head>
+<html>
 
-	<body>
-        <div >
+<head>
+    <meta charset=“UTF-8”>
+    <meta name=“Description” content=“Got something on your mind? Talk it out with Dr. Java.”>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dr Java</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div onclick="clr(1)">
         <header>
             <img src="Resources/icon.png" alt="" height="46pt">
             <h1>Dr. Java</h1>
             <div></div>
-        <div class="altt" onclick="swit();"></div>
+            <div class="altt" onclick="swit();"></div>
         </header>
-        <textarea name="txt" id="txt" rows="8" readonly >> Welcome, my name is Dr. Java, MA MEd. What would you like to talk about?</textarea>
+        <textarea name="txt" id="txt" rows="8"
+            readonly>> Welcome, my name is Dr. Java, MA MEd. What would you like to talk about?</textarea>
         <!--  <div>
             <input type="search" name="in" id="in">
             <input type="button" value="Respond" id="send" onclick="receive()" style="cursor: grab;">
         </div>-->
-        </div>
-        <div contenteditable="true" id="bar" onclick="clr(0)">Ask Something...</div>
+    </div>
+    <div contenteditable="true" id="bar" onclick="clr(0)">Ask Something...</div>
 
-        <!--    <div onclick="clr(1)" id="foot">-->
+    <!--    <div onclick="clr(1)" id="foot">-->
 
-    </div> 
-        
-        <script src="script.js"></script>
-	</body>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
 </html>
